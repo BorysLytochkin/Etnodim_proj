@@ -1,0 +1,428 @@
+@font-face {
+    font-family: Raleway Bold;
+    src: url('fonts/Raleway-Bold.ttf');
+}
+@font-face {
+    font-family: Raleway Regular;
+    src: url('fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: Raleway Light;
+    src: url('fonts/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: DelaGothicOne Regular;
+    src: url('fonts/DelaGothicOne-Regular.ttf');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.contain-header {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2em;
+    width: 115em;
+}
+.left-part {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-left: 6.3em;
+}
+.right-part {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-right: 6.3em;
+}
+.arrow-txt {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3em;
+}
+.arrow {
+    width: 0.6em;
+    height: 0.4em;
+    margin-top: 0.3em;
+}
+.catalog {
+    color: rgb(218, 31, 57);
+    font-family: Raleway Bold;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: left
+}
+.sales, .blog, .about-us, .language, .currency, .number {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Regular;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.uan {
+    width: 0.8em;
+    height: 1.1em;
+}
+.logo {
+    width: 13em;
+}
+
+
+
+
+.all {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5em;
+}
+
+
+
+
+.selected {
+    display: flex;
+    flex-direction: row;
+    height: 1em;
+    align-items: center;
+    margin-left: 6.3em;
+    margin-top: 2em;
+}
+.selected-hr {
+    margin: 0px 5px 0px 5px;
+	padding: 0;
+    width: 1.5em;
+}
+.selected-main, .selected-women {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 166.4%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.selected-Women-vyshyvanka {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 0.9em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-left: 6.3em;
+    margin-right: 5em;
+    width: 8em;
+}
+.filter-size, .filter-colour, .filter-Season, .filter-fabric, .filter-Sleeve {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3em;
+    margin-top: 0.5em;
+}
+.size, .colour, .season, .fabric, .sleeve {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 166.4%;
+    letter-spacing: 0%;
+    text-align: left;
+    }
+.select-size, .select-colour {
+    color: rgb(86, 86, 86);
+    font-family: Raleway Light;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 0.9em;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 80px;
+}
+
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 81em;
+}
+.sort {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3em;
+}
+.sorting {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 0.9em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.big-text {
+    color: rgb(0, 0, 0);
+    font-family: DelaGothicOne Regular;
+    font-size: 2.4em;
+    font-weight: 400;
+    line-height: 140.3%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+
+.img-contain{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+.column1, .column2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.7em;
+    gap: 3em;
+}
+.img-and-prices{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.blouse {
+    width: 43.7em;
+    height: 43.7em;
+}
+.txt-under-photo {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.price-under-photo {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 0.9em;
+    font-weight: 700;
+    line-height: 166.2%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+.show-more-string{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 31em;
+    margin-bottom: 9.5em;
+}
+.show-more-img-txt {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.4em;
+}
+.pages {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.4em;
+    gap: 0.5em;
+}
+.show-more{
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 0.9em;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 45em;
+    text-decoration: underline;
+    min-width: 9.5em;
+}
+.page1, .page2, .page3, .three-dots-page, .page6, .next-page {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 0.9em;
+    font-weight: 700;
+    line-height: 166.2%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+footer {
+    background-image: url(images/bckgr-footer.png);
+}
+
+.logo2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4.7em;
+}
+.footer-rows {
+    display: flex;
+    flex-direction: row;
+    margin-left: 6.3em;
+    margin-right: 6.3em;
+    margin-top: 3em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+.footer-column2 {
+    margin-left: 9.4em;
+}
+.footer-column3 {
+    margin-left: 23.7em;
+}
+.footer-column4 {
+    margin-left: 30em;
+}
+.time-date {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6em;
+}
+.footer-txt, .time-date {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+    min-width: 8.2em;
+}
+.footer-txt2 {
+    color: rgb(218, 31, 57);
+    font-family: Raleway Bold;
+    font-size: 0.9em;
+    font-weight: 700;
+    line-height: 166.2%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 2em;
+}
+.footer-txt3 {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: underline;
+}
+.footer-txt4 {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 5em;
+}
+.footer-logos {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25em;
+}
+.footer-logo {
+    width: 1.2em;
+    height: 1em;
+}
+.all-footer {
+    padding-bottom: 3em;
+}
+
+
+
+
+
+.checkbox {
+    display: flex;
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: Basis Grotesque Pro Regular;
+    font-size: 1em;
+    text-align: left;
+  }
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    border: 1px solid rgb(201, 201, 201);
+  }
+.checkbox input:checked ~ .checkmark {
+    background-color: white;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkbox .checkmark:after {
+    left: 0px;
+    top: 1px;
+    width: 18px;
+    height: 9px;
+    background-image: url(images/Vector40.png);
+    background-repeat: no-repeat;
+    background-size: 55% 90%;
+}
+
+
+
