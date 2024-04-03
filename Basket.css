@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Raleway Bold;
+    src: url('fonts/Raleway-Bold.ttf');
+}
+@font-face {
+    font-family: Raleway Regular;
+    src: url('fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: Raleway Light;
+    src: url('fonts/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: DelaGothicOne Regular;
+    src: url('fonts/DelaGothicOne-Regular.ttf');
+}
+html, body {
+    margin: 0; padding: 0; width: 100%; max-width: 100%;    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.contain-header {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2em;
+}
+.left-part {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-left: 6.3em;
+}
+.right-part {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-right: 6.3em;
+}
+.arrow-txt {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3em;
+}
+.arrow {
+    width: 0.6em;
+    height: 0.4em;
+    margin-top: 0.3em;
+}
+.catalog {
+    color: rgb(218, 31, 57);
+    font-family: Raleway Bold;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: left
+}
+.sales, .blog, .about-us, .language, .currency, .number {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Regular;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.uan {
+    width: 0.8em;
+    height: 1.1em;
+}
+.logo {
+    width: 13em;
+}
