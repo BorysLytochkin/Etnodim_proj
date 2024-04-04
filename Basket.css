@@ -104,8 +104,8 @@ p {
     margin-left: 6.3em;
     margin-top: 2em;
 }
-.selected-hr {
-    margin: 0px 5px 0px 5px;
+.selected-hr1, .selected-hr2, .selected-hr3, .selected-hr4 {
+    margin: 0px 0.3em 0px 0.3em;
 	padding: 0;
     width: 1.5em;
 }
@@ -147,7 +147,7 @@ p {
 .Lito {
     color: rgb(0, 0, 0);
     font-family: Raleway Bold;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: 600;
     line-height: 21px;
     letter-spacing: 0%;
@@ -167,9 +167,9 @@ p {
 .color, .size {
     color: rgb(0, 0, 0);
     font-family: Raleway Light;
-    font-size: 12px;
+    font-size: 0.8em;
     font-weight: 300;
-    line-height: 14px;
+    line-height: 0.9em;
     letter-spacing: 0%;
     text-align: left;
 }
@@ -181,7 +181,7 @@ p {
 .selected-color, #size-select {
     color: rgb(0, 0, 0);
     font-family: Raleway Bold;
-    font-size: 12px;
+    font-size: 0.8em;
     font-weight: 600;
     line-height: 166.4%;
     letter-spacing: 0%;
@@ -221,7 +221,7 @@ p {
 .price, .amount-basket, .sum {
     color: rgb(0, 0, 0);
     font-family: Raleway Light;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 300;
     line-height: 166.19%;
     letter-spacing: 0%;
@@ -230,7 +230,7 @@ p {
 .cost {
     color: rgb(0, 0, 0);
     font-family: Raleway Bold;
-    font-size: 12px;
+    font-size: 0.8em;
     font-weight: 600;
     line-height: 166.4%;
     letter-spacing: 0%;
@@ -239,7 +239,7 @@ p {
 .amount {
     color: rgb(0, 0, 0);
     font-family: Raleway Bold;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: 300;
     line-height: 166.19%;
     letter-spacing: 0%;
@@ -264,7 +264,7 @@ p {
     display:flex;
     flex-direction: row;
     align-items: center;
-    gap: 45em;
+    gap: 40%;
     margin-bottom: 3em;
 }
 .left {
@@ -281,29 +281,29 @@ p {
 .pay {
     color: rgb(0, 0, 0);
     font-family: Raleway Bold;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
-    line-height: 19px;
+    line-height: 1.1em;
     letter-spacing: 0%;
     text-align: left;
 }
 .line-price {
     color: rgb(218, 31, 57);
     font-family: Raleway Bold;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
-    line-height: 19px;
+    line-height: 1.1em;
     letter-spacing: 0%;
     text-align: left;
 }
 .button {
     color: rgb(255, 255, 255);
     font-family: Raleway Bold;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: 600;
-    line-height: 16px;
+    line-height: 1em;
     letter-spacing: 0%;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     background-color: red;
     padding: 1em;
@@ -312,12 +312,13 @@ p {
 .cont-order {
     color: rgb(0, 0, 0);
     font-family: Raleway Bold;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: 600;
-    line-height: 16px;
+    line-height: 1em;
     letter-spacing: 0%;
     text-align: left;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 .two-txts {
     width: 38em;
@@ -325,9 +326,9 @@ p {
 .long-txt {
     color: rgb(0, 0, 0);
     font-family: Raleway Light;
-    font-size: 12px;
+    font-size: 0.8em;
     font-weight: 300;
-    line-height: 18px;
+    line-height: 1.1em;
     letter-spacing: 0%;
     text-align: left;
 }
@@ -423,4 +424,301 @@ footer {
 }
 .all-footer {
     padding-bottom: 3em;
+}
+
+
+
+
+@media  screen and (min-width: 600px) and (max-width: 1024px) {
+.footer-rows {
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.footer-txt4 {
+    margin-top: 2em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4 {
+    gap: 0em; 
+}
+.mob-rows {
+    gap: 1em;
+    margin-top: 2em;
+}
+.footer-logos {
+    gap: 0.7em;
+}
+
+
+
+
+
+.catalog, .sales, .blog, .about-us, #lang-select, #currency-select, .number {
+    display: none;
+}
+.burger {
+    display: block;
+}
+.selected {
+    display: none;
+}
+.contain-header {
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.right-part {
+    gap: 1em;
+}
+.logo {
+    width: 10em;
+}
+.all-main {
+    margin-left: 0em;
+    margin-right: 0em;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    flex-direction: column;
+
+}
+.rows {
+    gap: 5em;
+}
+.selected {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.line-sum-txt {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.order {
+    gap: 3em;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.line-sum-txt {
+    align-items: center;
+}
+.line {
+    width: 35em;
+}
+.two-txts {
+    width: auto ;
+}
+.price-basket, .sum-basket, .button-div {
+    gap: 2em;
+}
+}
+
+
+
+@media  screen and (min-width: 0px) and (max-width: 599px) {
+.footer-rows {
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.footer-txt4 {
+    margin-top: 2em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4 {
+    gap: 0em; 
+}
+.mob-rows {
+    gap: 1em;
+    margin-top: 2em;
+}
+.footer-logos {
+    gap: 0.7em;
+}
+
+
+
+
+
+.catalog, .sales, .blog, .about-us, #lang-select, #currency-select, .number {
+    display: none;
+}
+.burger {
+    display: block;
+}
+.selected {
+    display: none;
+}
+.contain-header {
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.right-part {
+    gap: 1em;
+}
+.logo {
+    width: 10em;
+}
+.all-main {
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    flex-direction: column;
+
+}
+.rows {
+    gap: 1em;
+}
+.selected {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.line-sum-txt {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.order {
+    gap: 3em;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.line-sum-txt {
+    margin-left: 2em;
+    margin-right: 2em;
+    align-items: center;
+}
+.line {
+    width: 75%;
+}
+.two-txts {
+    width: auto ;
+}
+.price-basket, .sum-basket, .button-div {
+    gap: 2em;
+}
+.basket-photo {
+    width: 32%;
+    height: 100%;
+}
+.Lito {
+    font-size: 0.9em;
+}
+.price, .amount-basket, .sum {
+    font-size: 0.8em;
+}
+.size-selector, .color-selector {
+    align-items: center;
+    gap: 3em;
+}
+.left {
+    gap: 5em;
+}
+}
+.right {
+    gap: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (min-width: 1024px) and (max-width: 1600px) {
+.footer-rows {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.footer-txt4 {
+    margin-top: 2em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4 {
+    gap: 0em; 
+}
+.mob-rows {
+    gap: 4em;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+.footer-logos {
+    gap: 1em;
+}
+.footer-txt4 {
+    margin-top: 4em;
+}
+
+
+
+
+
+
+
+
+.catalog, .sales, .blog, .about-us, .number, .selected-main, .selected-women, .selected-hr1, .selected-hr2 {
+    display: none;
+}
+.burger {
+    display: block;
+}
+.contain-header {
+    margin-top: 0em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.right-part {
+    gap: 1em;
+}
+.logo {
+    width: 13em;
+}
+
+
+.all-main {
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-content: space-between;
+    gap: 0em;
+}
+.rows {
+    gap: 5em;
+}
+.selected {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.line-sum-txt {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.order {
+    gap: 0em;
+    justify-content: space-between;
+}
+.right {
+    margin-right: 4em;
+}
 }
