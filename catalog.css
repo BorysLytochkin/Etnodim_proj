@@ -390,6 +390,10 @@ footer {
 .all-footer {
     padding-bottom: 3em;
 }
+.reload {
+    width: 1em;
+    height: 1em;
+}
 
 
 
