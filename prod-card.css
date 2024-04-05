@@ -504,7 +504,7 @@ footer {
 
 
 
-@media  screen and (min-width: 0px) and (max-width: 1024px) {
+@media  screen and (min-width: 600px) and (max-width: 1024px) {
 .footer-rows {
     flex-direction: column;
     margin-left: 2em;
@@ -615,8 +615,8 @@ footer {
 }
 .footer-up {
     position: absolute;
-    top: 150%;
-    left: 46%;
+    top: -15px;
+    left: 50%;
 }
 .photo2-cont3, .photo3-cont3, .photo4-cont3 {
     display: none;
@@ -641,6 +641,9 @@ footer {
     line-height: 166.2%;
     letter-spacing: 0%;
     text-align: left;
+}
+.all-footer {
+    position: relative;
 }
 }
 
