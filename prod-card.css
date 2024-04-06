@@ -376,14 +376,27 @@ summary {
     flex-direction: row;
     gap: 50px;
     margin-left: 6.3em;
-    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: scroll;
     margin-bottom: 100px;
 }
-.photo1-cont3, .photo2-cont3, .photo3-cont3 {
+.photo1-cont3, .photo2-cont3, .photo3-cont3, .photo4-cont3 {
     height: 100%;
 }
-.div-for-back:hover img{
+.div-for-back1:hover img{
     transform: scale(0.8); 
+}
+.div-for-back2:hover img{
+    transform: scale(0.8); 
+}
+.div-for-back3:hover img{
+    transform: scale(0.8); 
+}
+.div-for-back4:hover img{
+    transform: scale(0.8); 
+}
+.pre-footer-left, .pre-footer-right {
+    display: none;
 }
 
 
@@ -602,6 +615,8 @@ footer {
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
 } 
 .pre-footer-left {
     position: absolute;
@@ -644,6 +659,21 @@ footer {
 }
 .all-footer {
     position: relative;
+}
+.pre-footer-left, .pre-footer-right {
+    display: block;
+}
+.div-for-back1:hover img{
+    transform: scale(1); 
+}
+.div-for-back2:hover img{
+    transform: scale(1); 
+}
+.div-for-back3:hover img{
+    transform: scale(1); 
+}
+.div-for-back4:hover img{
+    transform: scale(1); 
 }
 }
 
@@ -713,7 +743,205 @@ footer {
     margin-left: 2em;
     margin-right: 2em;
 }
+.pre-footer-left, .pre-footer-right {
+    display: none;
 }
+.footer-up {
+    position: absolute;
+    top: -15px;
+    left: 49%;
+}
+.all-footer {
+    position: relative;
+}
+.div-for-back1:hover img{
+    transform: scale(1); 
+}
+.div-for-back2:hover img{
+    transform: scale(1); 
+}
+.div-for-back3:hover img{
+    transform: scale(1); 
+}
+.div-for-back4:hover img{
+    transform: scale(1); 
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (min-width: 0px) and (max-width: 600px) {
+.footer-rows {
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.footer-txt4 {
+    margin-top: 2em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4 {
+    gap: 0em; 
+}
+.mob-rows {
+    gap: 1em;
+    margin-top: 2em;
+}
+.footer-logos {
+    gap: 0.7em;
+}
+
+
+
+
+.catalog, .sales, .blog, .about-us, #lang-select, #currency-select, .number {
+    display: none;
+}
+.burger, .arrow-back {
+    display: block;
+}
+.selected-main, .selected-hr1, .selected-women, .selected-hr2,.selected-hr3, .selected-Women-vyshyvanka-Lito {
+    display: none;
+}
+.contain-header {
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.right-part {
+    gap: 1em;
+}
+.logo {
+    width: 10em;
+}
+.arrow-div {
+    display: none;
+}
+
+.first-container {
+    gap: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+    flex-direction: column;
+}
+.selected {
+    margin-left: 1em;
+}
+.selected-Women-vyshyvanka {
+    margin-left: 1em;
+}
+.photo-block {
+    width: 100%;
+}
+.four-pictures {
+    overflow: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-product-photo2, .card-product-photo3, .card-product-photo4 {
+    width: 100%;
+}
+.card-product-photo5 {
+    width: auto;
+    height: auto;
+}
+.text-block {
+    width: 100%;
+}
+.second-container {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.third-container {
+    flex-direction: column;
+    margin-left: 0em;
+    overflow: hidden;
+    gap: 0px;
+    align-items: center;
+    position: relative;
+}
+.div-for-back2, .div-for-back3, .div-for-back4 {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+.div-for-back1 {
+    width: 75%;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+} 
+.pre-footer-left {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+}
+.pre-footer-right {
+    position: absolute;
+    top: 47%;
+    left: 95%;
+}
+.footer-up {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+}
+.photo2-cont3, .photo3-cont3, .photo4-cont3 {
+    display: none;
+}
+.sec-cont-txt {
+    font-size: 28px;
+}
+.prefooter-name{
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.prefooter-price {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 166.2%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.all-footer {
+    position: relative;
+}
+.pre-footer-left, .pre-footer-right {
+    display: block;
+}
+.div-for-back1:hover img{
+    transform: scale(1); 
+}
+.div-for-back2:hover img{
+    transform: scale(1); 
+}
+.div-for-back3:hover img{
+    transform: scale(1); 
+}
+.div-for-back4:hover img{
+    transform: scale(1); 
+}
+}
+
 
 
 
