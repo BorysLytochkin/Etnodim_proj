@@ -194,7 +194,7 @@ p {
     flex-direction: row;
     gap: 10%
 }
-.card-product-photo2, .card-product-photo3, .card-product-photo4 {
+.card-product-photo2, .card-product-photo3, .card-product-photo4, .card-product-photo5 {
     width: 45%;
 }
 .first-container {
@@ -211,11 +211,6 @@ p {
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-}
-
-.card-product-photo5 {
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -365,18 +360,18 @@ summary {
     text-transform: uppercase;
 }
 
-
-.div-for-back1, .div-for-back2, .div-for-back3, .div-for-back4 {
+.div-for-back1-photo, .div-for-back2-photo, .div-for-back3-photo, .div-for-back4-photo {
     background-image: url(images/back-pic-cont3.png);
     background-size: cover;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .third-container {
     display: flex;
     flex-direction: row;
     gap: 50px;
     margin-left: 6.3em;
-    overflow-y: hidden;
     overflow-x: scroll;
     margin-bottom: 100px;
 }
@@ -488,6 +483,30 @@ footer {
 }
 .all-footer {
     padding-bottom: 3em;
+    position: relative;
+}
+.footer-up {
+    position: absolute;
+    top: -15px;
+    left: 49%;
+}
+.prefooter-name1, .prefooter-name2, .prefooter-name3, .prefooter-name4{
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.prefooter-price1, .prefooter-price2, .prefooter-price3, .prefooter-price4 {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 166.2%;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 
@@ -582,13 +601,10 @@ footer {
 .four-pictures {
     overflow: auto;
     flex-direction: row;
+    gap: 37%;
 }
-.card-product-photo2, .card-product-photo3, .card-product-photo4 {
+.card-product-photo2, .card-product-photo3, .card-product-photo4, .card-product-photo5 {
     width: 100%;
-}
-.card-product-photo5 {
-    width: auto;
-    height: auto;
 }
 .text-block {
     width: 100%;
@@ -639,24 +655,6 @@ footer {
 .sec-cont-txt {
     font-size: 28px;
 }
-.prefooter-name{
-    color: rgb(0, 0, 0);
-    font-family: Raleway Light;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 166.19%;
-    letter-spacing: 0%;
-    text-align: left;
-}
-.prefooter-price {
-    color: rgb(0, 0, 0);
-    font-family: Raleway Bold;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 166.2%;
-    letter-spacing: 0%;
-    text-align: left;
-}
 .all-footer {
     position: relative;
 }
@@ -674,6 +672,12 @@ footer {
 }
 .div-for-back4:hover img{
     transform: scale(1); 
+}
+.prefooter-name2, .prefooter-name3, .prefooter-name4 {
+    display: none;
+}
+.prefooter-price2, .prefooter-price3, .prefooter-price4 {
+    display: none;
 }
 }
 
@@ -709,7 +713,7 @@ footer {
 .catalog, .sales, .blog, .about-us, .number, .selected-main, .selected-women, .selected-hr1, .selected-hr2 {
     display: none;
 }
-.burger, scroll {
+.burger{
     display: block;
 }
 .contain-header {
@@ -753,18 +757,6 @@ footer {
 }
 .all-footer {
     position: relative;
-}
-.div-for-back1:hover img{
-    transform: scale(1); 
-}
-.div-for-back2:hover img{
-    transform: scale(1); 
-}
-.div-for-back3:hover img{
-    transform: scale(1); 
-}
-.div-for-back4:hover img{
-    transform: scale(1); 
 }
 }
 
@@ -846,13 +838,10 @@ footer {
     overflow: auto;
     flex-direction: row;
     justify-content: center;
+    gap: 37%;
 }
-.card-product-photo2, .card-product-photo3, .card-product-photo4 {
+.card-product-photo2, .card-product-photo3, .card-product-photo4, .card-product-photo5 {
     width: 100%;
-}
-.card-product-photo5 {
-    width: auto;
-    height: auto;
 }
 .text-block {
     width: 100%;
@@ -904,24 +893,6 @@ footer {
 .sec-cont-txt {
     font-size: 28px;
 }
-.prefooter-name{
-    color: rgb(0, 0, 0);
-    font-family: Raleway Light;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 166.19%;
-    letter-spacing: 0%;
-    text-align: left;
-}
-.prefooter-price {
-    color: rgb(0, 0, 0);
-    font-family: Raleway Bold;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 166.2%;
-    letter-spacing: 0%;
-    text-align: left;
-}
 .all-footer {
     position: relative;
 }
@@ -940,7 +911,14 @@ footer {
 .div-for-back4:hover img{
     transform: scale(1); 
 }
+.prefooter-name2, .prefooter-name3, .prefooter-name4 {
+    display: none;
 }
+.prefooter-price2, .prefooter-price3, .prefooter-price4 {
+    display: none;
+}
+}
+
 
 
 
