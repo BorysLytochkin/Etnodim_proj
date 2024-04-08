@@ -683,7 +683,7 @@ footer {
 
 
 
-@media  screen and (min-width: 1024px) and (max-width: 1440px) {
+@media  screen and (min-width: 1025px) and (max-width: 1440px) {
 .footer-rows {
     margin-left: 1em;
     margin-right: 1em;
@@ -916,6 +916,9 @@ footer {
 }
 .prefooter-price2, .prefooter-price3, .prefooter-price4 {
     display: none;
+}
+.photo1-cont3 {
+    width: 100%;
 }
 }
 
