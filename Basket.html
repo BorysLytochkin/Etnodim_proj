@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Basket.css">
+</head>
+<body>
+    <header>
+        <div class="contain-header">
+            <div class="left-part">
+                <p class="catalog">Каталог</p>
+                <p class="sales">Знижки</p>
+                <p class="blog">Блог</p>
+                <p class="about-us">Про нас</p>
+                <img class="burger" src="images/burger.png" alt="burger-menu">
+            </div>
+            <div class="center">
+                <img src="images/logo-main.png" class="logo">
+            </div>
+            <div class="right-part">
+                <select name="Language" id="lang-select">
+                    <option value="Ua">UA</option>
+                    <option value="Eng">ENG</option>
+                    <option value="Fr">FR</option>
+                </select>
+                <select name="Currency" id="currency-select">
+                    <option value="uan">₴</option>
+                    <option value="dol">$</option>
+                    <option value="eu">€</option>
+                </select>
+                    <p class="number">+38 097 888 92 92</p>
+                <img src="images/search.png" class="search">
+                <img src="images/cart.png" class="shopping-bag">
+            </div>   
+        </div>
+    </header>
+    <main>
+        <div class="selected">
+            <p class="selected-main">Головна</p>
+            <hr class="selected-hr1">
+            <p class="selected-women">Жінкам</p>
+            <hr class="selected-hr2">
+            <p class="selected-Women-vyshyvanka">Жіночі вишиванки</p>
+            <hr class="selected-hr3">
+            <p class="selected-Women-vyshyvanka-Lito">Вишиванка з рослинним орнаментом Lito</p>
+            <hr class="selected-hr4">
+            <p class="selected-Women-coshik">Кошик</p>
+        </div>
+        <div class="all-main">
+            <div class="left-main">
+                <img src="images/basket-photo.png" class="basket-photo">
+                <div class="name-settings">
+                    <p class="Lito">Вишиванка з рослинним орнаментом Lito</p>
+                    <div class="settings">
+                        <div class="color-selector">
+                            <p class="color">Колір:</p>
+                            <p class="selected-color">бежевий</p>
+                        </div>
+                        <div class="size-selector">
+                            <p class="size">Розмір:</p>
+                            <select name="size-options" id="size-select">
+                                <option value="">32 | XXS </option>
+                                <option value="">34 | XS </option>
+                                <option value="">36 | S </option>
+                                <option value="">38 | M </option>
+                                <option value="">40 | L </option>
+                                <option value="">42 | XL </option>
+                                <option value="">46 | XXL </option>
+                                <option value="">48 | XХXL </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="price-basket">   
+                    <p class="price">Ціна</p>
+                    <p class="cost">2 800 грн.</p>
+                </div>
+                <div class="button-div"> 
+                    <p class="amount-basket">Кількість</p> 
+                    <div class="button-plus-minus">
+                        <input type="button" value="-" id="button-minus"> 
+                        <p class="amount">1</p>
+                        <input type="button" value="+" id="button-plus"> 
+                    </div>
+                </div>
+                <div class="sum-basket">   
+                    <p class="sum">Сума</p>
+                    <p class="cost">2 800 грн.</p>
+                </div>
+                <img src="images/delete.png" class="close">
+            </div>
+        </div>
+        <div class="line-sum-txt">
+            <hr class="line">
+            <div class="order">
+                <div class="left">
+                    <p class="pay">До сплати</p>
+                    <p class="line-price">2 800 грн.</p>
+                </div>
+                <div class="right">
+                    <button class="button">оформити замовлення</button> 
+                    <p class="cont-order">продовжити покупки</p>
+                </div>
+            </div>
+            <div class="two-txts">
+                <p class="long-txt">Не турбуйтесь якщо вам не підійде розмір, всі моделі мають різний крій: одні маломірні, інші повнорозмірні. На кожен наш товар розповсюджується гарантія, яка дозволяє обміняти або повернути річ протягом 31го дня після дати покупки.</p>
+                <p class="long-txt">Таке повернення можливе за умови, якщо товар не був у використанні. Зверніться до менеджера магазину, він надасть вам більш детальну інформацію :)</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="all-footer">
+            <img src="images/logo-main.png" class="logo2">
+            <div class="footer-rows">
+                <div class="mob-rows">
+                    <div class="footer-column1">
+                        <p class="footer-txt">Про нас</p>
+                        <p class="footer-txt">Команда</p>
+                        <p class="footer-txt">Блог</p>
+                        <p class="footer-txt2">Drabyna</p>
+                    </div>
+                    <div class="footer-column2">
+                        <p class="footer-txt">Цікава інформація</p>
+                        <p class="footer-txt">Вакансії</p>
+                        <p class="footer-txt">Доставка та оплата</p>
+                        <p class="footer-txt2">Етнодім Маніфест</p>
+                    </div>
+                </div>
+                <div class="mob-rows">
+                    <div class="footer-column3">
+                        <p class="footer-txt3">Контакти</p>
+                        <p class="footer-txt">+38 097 888 92 92</p>
+                        <p class="footer-txt">Україна, м. Київ, вул. Верхній Вал 58/28</p>
+                        <div class="time-date">
+                            <p class="time&date">пн-пт 10:00-20:00</p>
+                            <p class="time&date">сб-нд 11:00-19:00</p>
+                        </div>
+                    </div>
+                    <div class="footer-column4">
+                        <p class="footer-txt3">Соціальні мережі</p>
+                        <div class="footer-logos">
+                            <img src="images/fb.png" class="footer-logo">
+                            <img src="images/yt.png" class="footer-logo">
+                            <img src="images/sms.png" class="footer-logo">
+                            <img src="images/pnt.png" class="footer-logo">
+                            <img src="images/inst.png" class="footer-logo">
+                        </div>
+                        <p class="footer-txt4">© «Етнодім» 2009-2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

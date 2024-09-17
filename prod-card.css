@@ -1,0 +1,936 @@
+@font-face {
+    font-family: Raleway Bold;
+    src: url('fonts/Raleway-Bold.ttf');
+}
+@font-face {
+    font-family: Raleway Regular;
+    src: url('fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: Raleway Light;
+    src: url('fonts/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: DelaGothicOne Regular;
+    src: url('fonts/DelaGothicOne-Regular.ttf');
+}
+html, body {
+    margin: 0; padding: 0; width: 100%; max-width: 100%; overflow-x: hidden;
+}
+body {
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.checkbox {
+    display: flex;
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: Basis Grotesque Pro Regular;
+    font-size: 1em;
+    text-align: left;
+  }
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    border: 1px solid rgb(201, 201, 201);
+  }
+.checkbox input:checked ~ .checkmark {
+    background-color: white;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkbox .checkmark:after {
+    left: 0px;
+    top: 1px;
+    width: 18px;
+    height: 9px;
+    background-image: url(images/Vector40.png);
+    background-repeat: no-repeat;
+    background-size: 55% 90%;
+}
+
+
+
+
+
+.contain-header {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2em;
+    margin-left: 6.3em;
+    margin-right: 6.3em;
+}
+.left-part {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.right-part {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.arrow, .mob-arrow{
+    width: 0.6em;
+    height: 0.4em;
+    margin-top: 0.3em;
+}
+.catalog {
+    color: rgb(218, 31, 57);
+    font-family: Raleway Bold;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: left
+}
+.sales, .blog, .about-us, .language, .currency, .number {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Regular;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.uan {
+    width: 0.8em;
+    height: 1.1em;
+}
+.logo {
+    width: 13em;
+}
+.burger {
+    display: none;
+}
+#lang-select, #currency-select {
+    border: none;
+}
+
+
+
+.selected {
+    display: flex;
+    flex-direction: row;
+    height: 1em;
+    align-items: center;
+    margin-left: 6.3em;
+    margin-top: 2em;
+}
+.selected-hr1, .selected-hr2, .selected-hr3, .selected-hr4 {
+    margin: 0px 0.3em 0px 0.3em;
+	padding: 0;
+    width: 1.5em;
+}
+.selected-main, .selected-women, .selected-Women-vyshyvanka, .selected-Women-vyshyvanka-Lito {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 166.4%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.selected-Women-coshik {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 0.9em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.arrow-back {
+    display: none;
+}
+
+
+
+
+.all {
+    margin-top: 2em;
+}
+.photo-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.card-product-photo1 {
+    width: 100%;
+}
+.four-pictures {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.first-pic-block, .second-pic-block {
+    display: flex;
+    flex-direction: row;
+    gap: 10%
+}
+.card-product-photo2, .card-product-photo3, .card-product-photo4, .card-product-photo5 {
+    width: 45%;
+}
+.first-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8em;
+    margin-bottom: 100px;
+}
+.video-block {
+    position: relative;
+}
+.video-pic12 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+
+
+.etnodim {
+    color: rgb(181, 181, 181);
+    font-family: Raleway Regular;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.text-lito {
+    color: rgb(0, 0, 0);
+    font-family: DelaGothicOne Regular;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 151.3%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+.color {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.color-block {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+.button-plus-minus {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+.size-block {
+    margin-bottom: 1em;
+}
+#size {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0%;
+    text-align: left;   
+}
+.forma {
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.text-block {
+    width: 33%;
+}
+.size-table {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 4em;
+}
+.price {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 166.2%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 1em;
+}
+.button {
+    color: rgb(255, 255, 255);
+    font-family: Raleway Bold;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: red;
+    padding: 1.5em  6em  1.5em  6em;
+    border: none;
+    margin-bottom: 8em;
+}
+summary {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    }
+.into-summary  {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 7em;
+}
+#button-minus, #button-plus {
+    border: none;
+}
+
+
+
+
+.second-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6.3em;
+    margin-right: 6.3em;
+    margin-bottom: 50px;
+}
+.sec-cont-txt {
+    color: rgb(0, 0, 0);
+    font-family: DelaGothicOne Regular;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 140.3%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.div-for-back1-photo, .div-for-back2-photo, .div-for-back3-photo, .div-for-back4-photo {
+    background-image: url(images/back-pic-cont3.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 6.3em;
+    overflow-x: scroll;
+    margin-bottom: 100px;
+}
+.photo1-cont3, .photo2-cont3, .photo3-cont3, .photo4-cont3 {
+    height: 100%;
+}
+.div-for-back1:hover img{
+    transform: scale(0.8); 
+}
+.div-for-back2:hover img{
+    transform: scale(0.8); 
+}
+.div-for-back3:hover img{
+    transform: scale(0.8); 
+}
+.div-for-back4:hover img{
+    transform: scale(0.8); 
+}
+.pre-footer-left, .pre-footer-right {
+    display: none;
+}
+
+
+
+
+footer {
+    background-image: url(images/bckgr-footer.png);
+}
+
+
+.mob-rows {
+    gap: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4.7em;
+}
+.footer-rows {
+    display: flex;
+    flex-direction: row;
+    margin-left: 6.3em;
+    margin-right: 6.3em;
+    margin-top: 3em;
+    justify-content: space-around;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+.time-date {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6em;
+}
+.footer-txt, .time-date {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+    min-width: 8.2em;
+}
+.footer-txt2 {
+    color: rgb(218, 31, 57);
+    font-family: Raleway Bold;
+    font-size: 0.9em;
+    font-weight: 700;
+    line-height: 166.2%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 2em;
+}
+.footer-txt3 {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: underline;
+}
+.footer-txt4 {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 5em;
+}
+.footer-logos {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25em;
+}
+.footer-logo {
+    width: 1.2em;
+    height: 1em;
+}
+.all-footer {
+    padding-bottom: 3em;
+    position: relative;
+}
+.footer-up {
+    position: absolute;
+    top: -15px;
+    left: 49%;
+}
+.prefooter-name1, .prefooter-name2, .prefooter-name3, .prefooter-name4{
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.prefooter-price1, .prefooter-price2, .prefooter-price3, .prefooter-price4 {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 166.2%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (min-width: 600px) and (max-width: 1024px) {
+.footer-rows {
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.footer-txt4 {
+    margin-top: 2em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4 {
+    gap: 0em; 
+}
+.mob-rows {
+    gap: 1em;
+    margin-top: 2em;
+}
+.footer-logos {
+    gap: 0.7em;
+}
+
+
+
+
+.catalog, .sales, .blog, .about-us, #lang-select, #currency-select, .number {
+    display: none;
+}
+.burger, .arrow-back {
+    display: block;
+}
+.selected-main, .selected-hr1, .selected-women, .selected-hr2,.selected-hr3, .selected-Women-vyshyvanka-Lito {
+    display: none;
+}
+.contain-header {
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.right-part {
+    gap: 1em;
+}
+.logo {
+    width: 10em;
+}
+.arrow-div {
+    display: none;
+}
+
+.first-container {
+    gap: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+    flex-direction: column;
+}
+.selected {
+    margin-left: 1em;
+}
+.selected-Women-vyshyvanka {
+    margin-left: 1em;
+}
+.photo-block {
+    width: 100%;
+}
+.four-pictures {
+    overflow: auto;
+    flex-direction: row;
+    gap: 37%;
+}
+.card-product-photo2, .card-product-photo3, .card-product-photo4, .card-product-photo5 {
+    width: 100%;
+}
+.text-block {
+    width: 100%;
+}
+.second-container {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.third-container {
+    flex-direction: column;
+    margin-left: 1em;
+    overflow: auto;
+    gap: 0px;
+    align-items: center;
+    position: relative;
+}
+.div-for-back2, .div-for-back3, .div-for-back4 {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+.div-for-back1 {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+} 
+.pre-footer-left {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+}
+.pre-footer-right {
+    position: absolute;
+    top: 47%;
+    left: 95%;
+}
+.footer-up {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+}
+.photo2-cont3, .photo3-cont3, .photo4-cont3 {
+    display: none;
+}
+.sec-cont-txt {
+    font-size: 28px;
+}
+.all-footer {
+    position: relative;
+}
+.pre-footer-left, .pre-footer-right {
+    display: block;
+}
+.div-for-back1:hover img{
+    transform: scale(1); 
+}
+.div-for-back2:hover img{
+    transform: scale(1); 
+}
+.div-for-back3:hover img{
+    transform: scale(1); 
+}
+.div-for-back4:hover img{
+    transform: scale(1); 
+}
+.prefooter-name2, .prefooter-name3, .prefooter-name4 {
+    display: none;
+}
+.prefooter-price2, .prefooter-price3, .prefooter-price4 {
+    display: none;
+}
+}
+
+
+
+@media  screen and (min-width: 1025px) and (max-width: 1440px) {
+.footer-rows {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.footer-txt4 {
+    margin-top: 2em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4 {
+    gap: 0em; 
+}
+.mob-rows {
+    gap: 4em;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+.footer-logos {
+    gap: 1em;
+}
+.footer-txt4 {
+    margin-top: 4em;
+}
+
+
+
+
+
+.catalog, .sales, .blog, .about-us, .number, .selected-main, .selected-women, .selected-hr1, .selected-hr2 {
+    display: none;
+}
+.burger{
+    display: block;
+}
+.contain-header {
+    margin-top: 0em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.right-part {
+    gap: 1em;
+}
+.logo {
+    width: 13em;
+}
+
+
+
+.selected {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.first-container {
+    gap: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.text-block {
+    width: 37%;
+}
+.second-container, .third-container {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.pre-footer-left, .pre-footer-right {
+    display: none;
+}
+.footer-up {
+    position: absolute;
+    top: -15px;
+    left: 49%;
+}
+.all-footer {
+    position: relative;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (min-width: 0px) and (max-width: 600px) {
+.footer-rows {
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.footer-txt4 {
+    margin-top: 2em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4 {
+    gap: 0em; 
+}
+.mob-rows {
+    gap: 1em;
+    margin-top: 2em;
+}
+.footer-logos {
+    gap: 0.7em;
+}
+
+
+
+
+.catalog, .sales, .blog, .about-us, #lang-select, #currency-select, .number {
+    display: none;
+}
+.burger, .arrow-back {
+    display: block;
+}
+.selected-main, .selected-hr1, .selected-women, .selected-hr2,.selected-hr3, .selected-Women-vyshyvanka-Lito {
+    display: none;
+}
+.contain-header {
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.right-part {
+    gap: 1em;
+}
+.logo {
+    width: 10em;
+}
+.arrow-div {
+    display: none;
+}
+
+.first-container {
+    gap: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+    flex-direction: column;
+}
+.selected {
+    margin-left: 1em;
+}
+.selected-Women-vyshyvanka {
+    margin-left: 1em;
+}
+.photo-block {
+    width: 100%;
+}
+.four-pictures {
+    overflow: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 37%;
+}
+.card-product-photo2, .card-product-photo3, .card-product-photo4, .card-product-photo5 {
+    width: 100%;
+}
+.text-block {
+    width: 100%;
+}
+.second-container {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.third-container {
+    flex-direction: column;
+    margin-left: 0em;
+    overflow: hidden;
+    gap: 0px;
+    align-items: center;
+    position: relative;
+}
+.div-for-back2, .div-for-back3, .div-for-back4 {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+.div-for-back1 {
+    width: 75%;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+} 
+.pre-footer-left {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+}
+.pre-footer-right {
+    position: absolute;
+    top: 47%;
+    left: 95%;
+}
+.footer-up {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+}
+.photo2-cont3, .photo3-cont3, .photo4-cont3 {
+    display: none;
+}
+.sec-cont-txt {
+    font-size: 28px;
+}
+.all-footer {
+    position: relative;
+}
+.pre-footer-left, .pre-footer-right {
+    display: block;
+}
+.div-for-back1:hover img{
+    transform: scale(1); 
+}
+.div-for-back2:hover img{
+    transform: scale(1); 
+}
+.div-for-back3:hover img{
+    transform: scale(1); 
+}
+.div-for-back4:hover img{
+    transform: scale(1); 
+}
+.prefooter-name2, .prefooter-name3, .prefooter-name4 {
+    display: none;
+}
+.prefooter-price2, .prefooter-price3, .prefooter-price4 {
+    display: none;
+}
+.photo1-cont3 {
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

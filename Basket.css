@@ -1,0 +1,719 @@
+@font-face {
+    font-family: Raleway Bold;
+    src: url('fonts/Raleway-Bold.ttf');
+}
+@font-face {
+    font-family: Raleway Regular;
+    src: url('fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: Raleway Light;
+    src: url('fonts/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: DelaGothicOne Regular;
+    src: url('fonts/DelaGothicOne-Regular.ttf');
+}
+
+
+html, body {
+    margin: 0; padding: 0; width: 100%; max-width: 100%; overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.contain-header {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2em;
+    margin-left: 6.3em;
+    margin-right: 6.3em;
+}
+.left-part {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.right-part {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.arrow, .mob-arrow{
+    width: 0.6em;
+    height: 0.4em;
+    margin-top: 0.3em;
+}
+.catalog {
+    color: rgb(218, 31, 57);
+    font-family: Raleway Bold;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: left
+}
+.sales, .blog, .about-us, .language, .currency, .number {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Regular;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.uan {
+    width: 0.8em;
+    height: 1.1em;
+}
+.logo {
+    width: 13em;
+}
+.burger {
+    display: none;
+}
+#lang-select, #currency-select {
+    border: none;
+}
+
+
+
+.selected {
+    display: flex;
+    flex-direction: row;
+    height: 1em;
+    align-items: center;
+    margin-left: 6.3em;
+    margin-top: 2em;
+}
+.selected-hr1, .selected-hr2, .selected-hr3, .selected-hr4 {
+    margin: 0px 0.3em 0px 0.3em;
+	padding: 0;
+    width: 1.5em;
+}
+.selected-main, .selected-women, .selected-Women-vyshyvanka, .selected-Women-vyshyvanka-Lito {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 166.4%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.selected-Women-coshik {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 0.9em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+.all-main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-left: 6.3em;
+    margin-right: 6.3em;
+    margin-bottom: 3em;
+    gap: 20em;
+}
+.left-main {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.Lito {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.name-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 15em;
+}
+.color-selector {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+.color, .size {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 0.9em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.size-selector {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+.selected-color, #size-select {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 166.4%;
+    letter-spacing: 0%;
+    text-align: left;
+} 
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#size-select {
+    border: none;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+}
+.button-plus-minus {
+    display: flex;
+    flex-direction: row; 
+    gap: 1em;
+}
+#button-minus, #button-plus {
+    border: none;
+}
+.close {
+    width: 1em;
+    height: 1em;
+}
+.price-basket, .sum-basket, .button-div{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+.price, .amount-basket, .sum {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.cost {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 166.4%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.amount {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+.line-sum-txt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6.3em;
+    margin-right: 6.3em;
+    margin-bottom: 10em;
+}
+.line {
+    width: 20em;
+    float: left;
+    margin: 0em 0em 2em 0em;
+}
+.order {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40%;
+    margin-bottom: 3em;
+}
+.left {
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+}
+.right {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    align-items: center;
+}
+.pay {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.1em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.line-price {
+    color: rgb(218, 31, 57);
+    font-family: Raleway Bold;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.1em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.button {
+    color: rgb(255, 255, 255);
+    font-family: Raleway Bold;
+    font-size: 0.9em;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: red;
+    padding: 1em;
+    border: none;
+}
+.cont-order {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Bold;
+    font-size: 0.9em;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.two-txts {
+    width: 38em;
+}
+.long-txt {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 1.1em;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+
+
+
+footer {
+    background-image: url(images/bckgr-footer.png);
+}
+
+
+.mob-rows {
+    gap: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4.7em;
+}
+.footer-rows {
+    display: flex;
+    flex-direction: row;
+    margin-left: 6.3em;
+    margin-right: 6.3em;
+    margin-top: 3em;
+    justify-content: space-around;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+.time-date {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6em;
+}
+.footer-txt, .time-date {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+    min-width: 8.2em;
+}
+.footer-txt2 {
+    color: rgb(218, 31, 57);
+    font-family: Raleway Bold;
+    font-size: 0.9em;
+    font-weight: 700;
+    line-height: 166.2%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 2em;
+}
+.footer-txt3 {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: underline;
+}
+.footer-txt4 {
+    color: rgb(0, 0, 0);
+    font-family: Raleway Light;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 166.19%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 5em;
+}
+.footer-logos {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25em;
+}
+.footer-logo {
+    width: 1.2em;
+    height: 1em;
+}
+.all-footer {
+    padding-bottom: 3em;
+}
+
+
+
+
+@media  screen and (min-width: 600px) and (max-width: 1024px) {
+.footer-rows {
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.footer-txt4 {
+    margin-top: 2em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4 {
+    gap: 0em; 
+}
+.mob-rows {
+    gap: 1em;
+    margin-top: 2em;
+}
+.footer-logos {
+    gap: 0.7em;
+}
+
+
+
+
+
+.catalog, .sales, .blog, .about-us, #lang-select, #currency-select, .number {
+    display: none;
+}
+.burger {
+    display: block;
+}
+.selected {
+    display: none;
+}
+.contain-header {
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.right-part {
+    gap: 1em;
+}
+.logo {
+    width: 10em;
+}
+.all-main {
+    margin-left: 0em;
+    margin-right: 0em;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    flex-direction: column;
+
+}
+.rows {
+    gap: 5em;
+}
+.selected {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.line-sum-txt {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.order {
+    gap: 3em;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.line-sum-txt {
+    align-items: center;
+}
+.line {
+    width: 35em;
+}
+.two-txts {
+    width: auto ;
+}
+.price-basket, .sum-basket, .button-div {
+    gap: 2em;
+}
+}
+
+
+
+@media  screen and (min-width: 0px) and (max-width: 599px) {
+.footer-rows {
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.footer-txt4 {
+    margin-top: 2em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4 {
+    gap: 0em; 
+}
+.mob-rows {
+    gap: 1em;
+    margin-top: 2em;
+}
+.footer-logos {
+    gap: 0.7em;
+}
+
+
+
+
+
+.catalog, .sales, .blog, .about-us, #lang-select, #currency-select, .number {
+    display: none;
+}
+.burger {
+    display: block;
+}
+.selected {
+    display: none;
+}
+.contain-header {
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.right-part {
+    gap: 1em;
+}
+.logo {
+    width: 10em;
+}
+.all-main {
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    flex-direction: column;
+
+}
+.rows {
+    gap: 1em;
+}
+.selected {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.line-sum-txt {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.order {
+    gap: 3em;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.line-sum-txt {
+    margin-left: 2em;
+    margin-right: 2em;
+    align-items: center;
+}
+.line {
+    width: 75%;
+}
+.two-txts {
+    width: auto ;
+}
+.price-basket, .sum-basket, .button-div {
+    gap: 2em;
+}
+.basket-photo {
+    width: 32%;
+    height: 100%;
+}
+.Lito {
+    font-size: 0.9em;
+}
+.price, .amount-basket, .sum {
+    font-size: 0.8em;
+}
+.size-selector, .color-selector {
+    align-items: center;
+    gap: 3em;
+}
+.left {
+    gap: 5em;
+}
+}
+.right {
+    gap: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (min-width: 1024px) and (max-width: 1600px) {
+.footer-rows {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.footer-txt4 {
+    margin-top: 2em;
+}
+.footer-column1, .footer-column2, .footer-column3, .footer-column4 {
+    gap: 0em; 
+}
+.mob-rows {
+    gap: 4em;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+.footer-logos {
+    gap: 1em;
+}
+.footer-txt4 {
+    margin-top: 4em;
+}
+
+
+
+
+
+
+
+
+.catalog, .sales, .blog, .about-us, .number, .selected-main, .selected-women, .selected-hr1, .selected-hr2 {
+    display: none;
+}
+.burger {
+    display: block;
+}
+.contain-header {
+    margin-top: 0em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.right-part {
+    gap: 1em;
+}
+.logo {
+    width: 13em;
+}
+
+
+.all-main {
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-content: space-between;
+    gap: 0em;
+}
+.rows {
+    gap: 5em;
+}
+.selected {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.line-sum-txt {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.order {
+    gap: 0em;
+    justify-content: space-between;
+}
+.right {
+    margin-right: 4em;
+}
+}
